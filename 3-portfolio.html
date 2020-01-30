@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Alex Salazar J</title>
   </head>
   <!--Heading-->
   <body>
@@ -52,7 +51,7 @@
         <a href="mailto:alejan5@pdx.edu">alejan5@pdx.edu</a>
       </div>
       <div class="phone">Phone Number: (503)719-0561</div>
-      <button id="request-btn">Request Contact Info</button>
+      <button id="request" onclick="requestForm()">Request Contact Info</button>
       <br />
       <br />
       <div class="form" id="form">
@@ -105,13 +104,13 @@
             </textarea>
             <br />
             <br />
-            <button class="button" type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <button onclick="requestSent()">Submit</button>
+            <button onclick="clearForm()">Reset</button>
             <br />
           </fieldset>
         </form>
       </div>
     </footer>
-    <script src="3-portfolio.js"></script>
   </body>
+  <script src="3-portfolio.js"></script>
 </html>

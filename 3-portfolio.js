@@ -1,10 +1,16 @@
-let request = document.querySelector("button");
 let form = document.querySelector("form");
 
-request.addEventListener("click", () => {
-  if (form.style.display === "none") {
-    form.style.display = "block";
-  } else {
-    form.style.display = "none";
-  }
-});
+function requestForm() {
+  form.style.display = "block";
+  document.getElementById("request").style.display = "none";
+}
+
+function requestSent() {
+  form.style.display = "none";
+  document.getElementById("request").style.display = "block";
+}
+function clearForm() {
+  form.name.value = "";
+  form.email.value = "";
+  form.anycomments.value = "";
+}
