@@ -69,16 +69,17 @@ p {
 #fav {
   padding-left: 10px;
 }
-#maggieandme {
-  padding-left: 10px;
-}
 .row {
   display: inline-block;
   white-space: nowrap;
 }
-.row img {
+.row .two-col {
   width: 50%;
   height: auto;
+}
+.row .three-col {
+  width: 33.3%;
+  height: 550px;
 }
 
 /* %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
