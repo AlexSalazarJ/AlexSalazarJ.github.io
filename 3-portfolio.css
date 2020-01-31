@@ -180,3 +180,9 @@ textarea {
   margin: auto;
   width: 200px;
 }
+#sent {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: teal;
+}
