@@ -45,13 +45,11 @@
     </main>
 
     <footer>
-      <h5 id="contact">Contact Info</h5>
-      <div class="email">
-        Email:
-        <a href="mailto:alejan5@pdx.edu">alejan5@pdx.edu</a>
-      </div>
-      <div class="phone">Phone Number: (503)719-0561</div>
-      <button id="request" onclick="requestForm()">Request Contact Info</button>
+      <br />
+      <br />
+      <button class="button" id="request" onclick="requestForm()">
+        contact me
+      </button>
       <br />
       <br />
       <div class="form" id="form">
@@ -72,29 +70,30 @@
             <input type="email" id="email" name="email" />
             <br />
             <br />
+            <div class="reason">Reason For Request</div>
+            <br />
             <label
               ><input
                 class="radio"
                 type="radio"
-                name="student-type"
-                value="Undergraduate"
-                checked/>Undergraduate<br
+                name="reason"
+                value="Work"
+                checked/>Work<br
             /></label>
             <br />
             <label
               ><input
                 class="radio"
                 type="radio"
-                name="student-type"
-                value="Graduate"
-                checked/>Graduate<br
+                name="reason"
+                value="School"/>School<br
             /></label>
             <br />
             <label>
               <input
                 class="radio"
                 type="radio"
-                name="student-type"
+                name="reason"
                 value="Other"
                 checked/>Other<br
             /></label>
@@ -103,8 +102,7 @@
             <textarea name="comment" id="comment" cols="85" rows="10">
             </textarea>
             <br />
-            <br />
-            <button onclick="requestSent()">Submit</button>
+            <button class="button" onclick="requestSent()">Submit</button>
             <button onclick="clearForm()">Reset</button>
             <br />
           </fieldset>

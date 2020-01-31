@@ -9,8 +9,4 @@ function requestSent() {
   form.style.display = "none";
   document.getElementById("request").style.display = "block";
 }
-function clearForm() {
-  form.name.value = "";
-  form.email.value = "";
-  form.anycomments.value = "";
-}
+function clearForm() {}

@@ -127,6 +127,11 @@ span {
   text-decoration: underline;
   text-decoration-color: teal;
 }
+.reason {
+  margin-left: 20px;
+  color: #505050;
+  font-size: large;
+}
 form input[type="radio"] {
   margin-right: 10px;
   color: #505050;
@@ -169,4 +174,9 @@ textarea {
   margin-left: 15px;
   padding-bottom: 10px;
   font-size: large;
+}
+#request {
+  display: block;
+  margin: auto;
+  width: 200px;
 }
