@@ -35,6 +35,9 @@ footer {
   background-size: cover;
   background-position: 80% 42%;
 }
+footer a {
+  text-decoration: none;
+}
 
 footer h5,
 a {
