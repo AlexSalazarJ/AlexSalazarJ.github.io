@@ -41,7 +41,7 @@ a {
   padding-left: 10px;
   padding-top: 10px;
 }
-h5 {
+h3 {
   font-size: 25px;
 }
 .email {
@@ -186,4 +186,30 @@ textarea {
   justify-content: center;
   align-items: center;
   background-color: teal;
+}
+
+/*&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+done with the form
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&*/
+section a {
+  color: black;
+}
+section a:hover {
+  color: black;
+  font-weight: bold;
+}
+.sites ul {
+  display: flex;
+  list-style: none;
+}
+.sites ul li {
+  width: 100%;
+}
+h4 {
+  text-align: center;
+}
+.jk {
+  text-align: center;
+  padding-bottom: 2px;
+  font-size: 5px;
 }
