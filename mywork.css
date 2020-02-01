@@ -1,0 +1,17 @@
+body {
+  background-color: cornsilk;
+}
+.navbar-custom {
+  background-color: teal;
+}
+.nav.navbar-nav.navbar-custom li a {
+  color: cornsilk;
+}
+h4 {
+  text-align: center;
+}
+.jk {
+  text-align: center;
+  padding-bottom: 2px;
+  font-size: 5px;
+}
