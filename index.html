@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>i love pizza</title>
+  </head>
+  <body>
+    <!--Heading-->
+    <header>
+      <h1>Alex Salazar J</h1>
+      <nav class="">
+        <ul>
+          <li><a href="#aboutme">about me</a></li>
+          <li><a href="mywork.html">my work</a></li>
+          <li><a href="#aboutme">my projects</a></li>
+          <li><a href="#form-request">contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h3 id="aboutme">about me</h3>
+        <p class="">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil dolores
+          ratione esse repellendus hic expedita suscipit aperiam neque,
+          consequuntur veniam doloribus delectus dignissimos tenetur recusandae
+          ad praesentium deleniti necessitatibus aut.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic assumenda
+          ex temporibus expedita tempore? Veniam sed ea voluptate eos quae
+          eligendi facere consequuntur voluptatem voluptas, numquam accusantium
+          mollitia quaerat dolor?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt porro
+          sapiente dolor deserunt veritatis blanditiis dolorem, qui
+          reprehenderit ex voluptatem enim in consequuntur maxime nihil ratione?
+          Ea illum fuga mollitia.
+        </p>
+        <p>I languages I am confident with are C/C++ and Python.</p>
+      </section>
+    </main>
+
+    <footer>
+      <br />
+      <br />
+      <a
+        href="#form"
+        class="waves-effect waves-light btn"
+        id="form-request"
+        onclick="requestForm()"
+        >contact me</a
+      >
+
+      <br />
+      <br />
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s6">
+              <input
+                placeholder="Placeholder"
+                id="first_name"
+                type="text"
+                class="validate"
+              />
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate" />
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input
+                disabled
+                value="I am not editable"
+                id="disabled"
+                type="text"
+                class="validate"
+              />
+              <label for="disabled">Disabled</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="password" type="password" class="validate" />
+              <label for="password">Password</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate" />
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12">
+              This is an inline input field:
+              <div class="input-field inline">
+                <input id="email_inline" type="email" class="validate" />
+                <label for="email_inline">Email</label>
+                <span
+                  class="helper-text"
+                  data-error="wrong"
+                  data-success="right"
+                  >Helper text</span
+                >
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <h6>&copy Alex Salazar J</h6>
+    <div id="sent">Request Sent!</div>
+  </body>
+</html>
