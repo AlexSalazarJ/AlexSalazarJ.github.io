@@ -21,101 +21,103 @@
   </head>
   <body>
     <header>
-    <h1>hi there</h1>
-  </header>
+      <h1>hi there</h1>
+    </header>
     <nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"
-          ><i class="material-icons">menu</i></a
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+          <i class="material-icons">menu</i></a
         >
         <ul class="right hide-on-med-and-down">
-          <li><a href="../index.html"">home</a></li>
+          <li><a href="../index.html">home</a></li>
+          <li><a href="aboutme.html">about me</a></li>
           <li><a href="mywork.html">my work</a></li>
-          <li ><a href="myprojects.html">my projects</a></li>
+          <li><a href="myprojects.html">my projects</a></li>
           <li class="active"><a href="contact.html">conact me</a></li>
         </ul>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="../index.html"">home</a></li>
+      <li><a href="../index.html">home</a></li>
+      <li><a href="aboutme.html">about me</a></li>
       <li><a href="mywork.html">my work</a></li>
-      <li ><a href="myprojects.html">my projects</a></li>
+      <li><a href="myprojects.html">my projects</a></li>
       <li class="active"><a href="contact.html">conact me</a></li>
     </ul>
-         <!--########################################################################################-->
-      <!--################################          Form          ################################-->
-      <!--########################################################################################-->
-    <form id="contact-form" class="scale-transition scale-out">
-        <div class="row">
-          <div class="input-field col s6">
-            <input id="first_name" type="text" class="validate" />
-            <label class="active" for="first_name">First name</label>
-          </div>
-          <div class="input-field col s6">
-            <input id="last_name" type="text" class="validate" />
-            <label class="active" for="last_name">Last name</label>
-          </div>
+    <!--########################################################################################-->
+    <!--################################          Form          ################################-->
+    <!--########################################################################################-->
+    <form id="contact-form">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate" />
+          <label class="active" for="first_name">First name</label>
         </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <textarea
-              id="textarea2"
-              class="materialize-textarea"
-              data-length="120"
-            ></textarea>
-            <label class="active" for="textarea2">Reason for contact</label>
-          </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate" />
+          <label class="active" for="last_name">Last name</label>
         </div>
-
-        <div class="row">
-          <div class="input-field col s12">
-            <input id="email" type="email" class="validate" />
-            <label class="active" for="email">Email</label>
-            <span
-              class="helper-text"
-              data-error="please enter a valid email address"
-            ></span>
-          </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea
+            id="textarea2"
+            class="materialize-textarea"
+            data-length="120"
+          ></textarea>
+          <label class="active" for="textarea2">Reason for contact</label>
         </div>
+      </div>
 
-        <div class="center-align">
-          <span class="flow-text">Subscribe to my weekly newsletter?</span>
-          <p>
-            <label>
-              <input
-                id="yes_newsletter"
-                class="with-gap"
-                name="group1"
-                type="radio"
-                checked
-              />
-              <span>Yes, please sign me up!</span>
-            </label>
-
-            <label>
-              <input id="no_newsletter" name="group1" type="radio" disabled />
-              <span>No, thank you </span>
-            </label>
-            <label id="new_subscriber">disabled :(</label>
-          </p>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate" />
+          <label class="active" for="email">Email</label>
+          <span
+            class="helper-text"
+            data-error="please enter a valid email address"
+          ></span>
         </div>
+      </div>
 
-        <div class="center-align">
-          <button
-            class="btn waves-effect waves-light with-gap"
-            type="submit"
-            name="action"
-          >
-            Submit
-            <i class="material-icons right">send</i>
-          </button>
+      <div class="center-align">
+        <span class="flow-text">Subscribe to my weekly newsletter?</span>
+        <p>
+          <label>
+            <input
+              id="yes_newsletter"
+              class="with-gap"
+              name="group1"
+              type="radio"
+              checked
+            />
+            <span>Yes, please sign me up!</span>
+          </label>
 
-          <button type="reset" class="btn blue-grey" value="Reset">
-            Reset<i class="material-icons right">cancel</i>
-          </button>
-        </div>
+          <label>
+            <input id="no_newsletter" name="group1" type="radio" disabled />
+            <span>No, thank you </span>
+          </label>
+          <label id="new_subscriber">disabled :(</label>
+        </p>
+      </div>
+
+      <div class="center-align">
+        <button
+          class="btn waves-effect waves-light with-gap"
+          type="submit"
+          name="action"
+        >
+          Submit
+          <i class="material-icons right">send</i>
+        </button>
+
+        <button type="reset" class="btn blue-grey" value="Reset">
+          Reset<i class="material-icons right">cancel</i>
+        </button>
+      </div>
     </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script
