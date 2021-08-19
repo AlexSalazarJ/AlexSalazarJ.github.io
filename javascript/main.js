@@ -16,10 +16,24 @@ $(document).ready(function () {
   $('.parallax').parallax();
 });
 
-//init and set auto next on photos on home page
+//init and make picture move
+let MOVE_INTERVAL = 3000; //milliseconds
+
+opions = {
+  //options for carousel
+  duration: 200,
+  dist: -100,
+  shift: 0,
+  padding: 0,
+  numVisible: 5,
+  fullWidth: false,
+  indicators: false,
+  noWrap: false,
+  onCycleTo: null,
+};
 $(document).ready(function () {
-  $('.carousel').carousel();
+  $('.carousel').carousel(opions);
   window.setInterval(function () {
     $('.carousel').carousel('next');
-  }, 3000);
+  }, MOVE_INTERVAL);
 });
