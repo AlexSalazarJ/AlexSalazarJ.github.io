@@ -19,7 +19,7 @@ $(document).ready(function () {
 //init and make picture move
 let MOVE_INTERVAL = 3000; //milliseconds
 
-opions = {
+let opions = {
   //options for carousel
   duration: 200,
   dist: -100,
