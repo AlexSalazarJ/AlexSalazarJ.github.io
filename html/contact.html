@@ -95,10 +95,15 @@
             </label>
 
             <label>
-              <input id="no_newsletter" name="group1" type="radio" disabled />
+              <input
+                id="no_newsletter"
+                name="group1"
+                type="radio"
+                onclick="disable_no()"
+              />
               <span>No, thank you </span>
             </label>
-            <label id="new_subscriber">disabled :(</label>
+            <label id="new_subscriber" class="red-text">disabled :(</label>
           </p>
         </div>
 
@@ -124,5 +129,6 @@
       src="../javascript/materialize.min.js"
     ></script>
     <script defer src="../javascript/main.js"></script>
+    <script defer src="../javascript/contact.js"></script>
   </body>
 </html>
