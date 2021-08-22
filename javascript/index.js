@@ -2,7 +2,7 @@
  * CONSTANTS
  ***********************************************/
 
-const TOTAL_NUM_OF_GALLERY_PHOTOS = 208;
+const TOTAL_NUM_OF_GALLERY_PHOTOS = 207;
 const PHOTO_GALLERY_NUMBERS = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
   23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
@@ -16,7 +16,7 @@ const PHOTO_GALLERY_NUMBERS = [
   160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174,
   175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189,
   190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204,
-  205, 206, 207, 208,
+  205, 206, 207, 207,
 ];
 /***********************************************
  * Initialize Materialize components
@@ -86,15 +86,16 @@ function shuffle(array) {
  **********************************************************/
 function randomize_photo_gallery() {
   //randomize the number order of the photos
-  let random_order = shuffle(PHOTO_GALLERY_NUMBERS);
+  let photos = PHOTO_GALLERY_NUMBERS.slice(0);
+  photos = shuffle(photos);
   for (let i = 0; i < TOTAL_NUM_OF_GALLERY_PHOTOS; ++i) {
     document.getElementById(
       `img-num-${i}`
-    ).src = `images/babies/homepage_gallery_photo_${random_order[i]}.JPG`;
+    ).src = `images/babies/homepage_gallery_photo_${photos[i]}.JPG`;
   }
 }
 /**********************************************************
- * randomize_photo_gallery()
+ * randomize_photo_gallery() end
  **********************************************************/
 
 /**********************************************************
@@ -111,3 +112,7 @@ document.addEventListener(
   },
   false
 );
+/**********************************************************
+ * ocument.addEventListener(
+  'DOMContentLoaded           end
+ **********************************************************/
