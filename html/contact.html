@@ -23,6 +23,7 @@
     <header>
       <h1>hi there</h1>
     </header>
+<!-- ############################################################\\ Navbars Start  -->
     <nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Logo</a>
@@ -46,19 +47,26 @@
       <li><a href="myprojects.html">my projects</a></li>
       <li class="active"><a href="contact.html">conact me</a></li>
     </ul>
+
+<!-- ############################################################\\ Navbars End -->
+
     <main>
-      <div class="container">
+      <div class="<container">
+<!-- ############################################################\\ Form Start -->
         <form id="contact-form">
+<!-- ############################################################\\ User Name input start -->       
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 12">
               <input id="first_name" type="text" class="validate" />
               <label class="active" for="first_name">First name</label>
             </div>
-            <div class="input-field col s6">
+            <div class="input-field col s12 m6 12">
               <input id="last_name" type="text" class="validate" />
               <label class="active" for="last_name">Last name</label>
             </div>
           </div>
+<!-- ############################################################\\ User Name input End -->   
+<!-- ############################################################\\ User Reason input Start -->  
           <div class="row">
             <div class="input-field col s12">
               <textarea
@@ -69,7 +77,8 @@
               <label class="active" for="textarea2">Reason for contact</label>
             </div>
           </div>
-
+<!-- ############################################################\\ User Reason input End -->  
+<!-- ############################################################\\ User email Start -->  
           <div class="row">
             <div class="input-field col s12">
               <input id="email" type="email" class="validate" />
@@ -80,10 +89,12 @@
               ></span>
             </div>
           </div>
-
-          <div class="center-align">
-            <span class="flow-text">Subscribe to my weekly newsletter?</span>
+<!-- ############################################################\\ User email End -->  
+<!-- ############################################################\\ Newletter Question and user input Start -->  
+          <div class="row center-align">
+            <span class="flow-text col s12">Subscribe to my weekly newsletter?</span>
             <p>
+              <div class="col s12 m6">
               <label>
                 <input
                   id="yes_newsletter"
@@ -94,6 +105,7 @@
                 />
                 <span>Yes, please sign me up!</span>
               </label>
+            </div>
 
               <label>
                 <input
@@ -108,7 +120,8 @@
               <label id="new_subscriber" class="red-text">disabled :(</label>
             </p>
           </div>
-
+<!-- ############################################################\\ Newletter Question and user input End -->  
+<!-- ############################################################\\ Submit and cancel buttons Start --> 
           <div class="center-align">
             <button
               class="btn waves-effect waves-light with-gap"
@@ -119,12 +132,12 @@
               <i class="material-icons right">send</i>
             </button>
 
-            <button type="reset" class="btn blue-grey" value="Reset">
+            <button type="reset" class="btn waves-effect waves-light blue-grey value="Reset">
               Reset<i class="material-icons right">cancel</i>
             </button>
           </div>
-
-          <!-- Modal Structure -->
+<!-- ############################################################\\ Submit and cancel buttons End --> 
+<!-- ############################################################\\ Modal Structure Start  -->
           <div id="modal1" class="modal newsletter_modal">
             <div class="modal-content">
               <h4>
@@ -156,7 +169,9 @@
               </a>
             </div>
           </div>
+<!-- ############################################################\\ Modal Structure End  -->
         </form>
+<!-- ############################################################\\ Form Ends  -->
       </div>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>

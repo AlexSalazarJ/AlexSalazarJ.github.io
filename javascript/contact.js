@@ -1,7 +1,17 @@
-//modar that pops up when the user tries to opt out of weekly newsletter and
-//asks if they are sure they want to opt out.
+/***********************************************
+ * Initialize Materialize components
+ ***********************************************/
+$(document).ready(function () {
+  M.updateTextFields();
+});
 
-//initialize all modars
+//init navbars
+$(document).ready(function () {
+  $('.sidenav').sidenav();
+});
+/*
+  Modar Initializer with options Starts
+*/
 document.addEventListener('DOMContentLoaded', function () {
   let options = {
     opacity: 0.5, //            Type: Number      Desc: Opacity of the modal overlay.
@@ -16,31 +26,51 @@ document.addEventListener('DOMContentLoaded', function () {
     startingTop: '4%', //       Type: String      Desc: Starting top offset
     endingTop: '10%', //        Type: String      Desc: Ending top offset
   };
-  var elems = document.querySelectorAll('.modal');
-  var instances = M.Modal.init(elems, options);
+  let elems = document.querySelectorAll('.modal');
+  let instances = M.Modal.init(elems, options);
 });
+/*
+  Modar Initializer with options Ends
+*/
 
-//modar pops up on click and verifies if the user wants to opt out of the newsletter
+/*
+  function are_you_sure() starts
+  Modar pops up on click and verifies if the user wants to opt out of the newsletter
+*/
 function are_you_sure() {
-  var elem = document.querySelector('.newsletter_modal');
-  var instance = M.Modal.getInstance(elem);
+  let elem = document.querySelector('.newsletter_modal');
+  let instance = M.Modal.getInstance(elem);
   instance.open();
 }
+/*
+  function are_you_sure() ends
+*/
 
-//contact me function, will only go off once because once the button is disabled, it cannot be clicked again.
-
+/*
+  function change_newsletter_choice_to_yes() starts
+*/
 function change_newsletter_choice_to_yes() {
   document.getElementById('no_newsletter').checked = false;
   document.getElementById('yes_newsletter').checked = true;
 }
+/*
+  function change_newsletter_choice_to_yes() ends
+*/
+
+/*
+function disable_no() starts
+*/
 function disable_no() {
   window.alert('Oops! Something went wrong');
   change_newsletter_choice_to_yes();
   $('#no_newsletter').prop('disabled', true);
   document.getElementById('new_subscriber').style.display = 'inline';
 
-  var delayInMilliseconds = 2000; //2 seconds
+  let delayInMilliseconds = 500; //0.50 seconds
   setTimeout(function () {
     document.getElementById('new_subscriber').style.display = 'none';
   }, delayInMilliseconds);
 }
+/*
+function disable_no() ends
+*/
