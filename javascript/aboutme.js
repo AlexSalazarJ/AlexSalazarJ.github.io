@@ -1,4 +1,6 @@
-//init navbars on all pages
+/***********************************************
+ * Initialize Materialize components
+ ***********************************************/
 $(document).ready(function () {
   $('.sidenav').sidenav();
 });
@@ -29,3 +31,6 @@ $(document).ready(function () {
     $('.carousel').carousel('next');
   }, MOVE_INTERVAL);
 });
+/***********************************************
+ * Initialize Materialize components ends
+ ***********************************************/

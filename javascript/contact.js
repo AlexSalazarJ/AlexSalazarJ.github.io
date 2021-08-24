@@ -9,9 +9,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.sidenav').sidenav();
 });
-/*
-  Modar Initializer with options Starts
-*/
+
+//init modars
 document.addEventListener('DOMContentLoaded', function () {
   let options = {
     opacity: 0.5, //            Type: Number      Desc: Opacity of the modal overlay.
@@ -29,37 +28,43 @@ document.addEventListener('DOMContentLoaded', function () {
   let elems = document.querySelectorAll('.modal');
   let instances = M.Modal.init(elems, options);
 });
-/*
-  Modar Initializer with options Ends
-*/
+/***********************************************
+ * Initialize Materialize components ends
+ ***********************************************/
 
-/*
-  function are_you_sure() starts
-  Modar pops up on click and verifies if the user wants to opt out of the newsletter
-*/
+/**********************************************************
+ * are_you_sure()
+ *
+ * Description: odar pops up on click and verifies if the
+ * user wants to opt out of the newsletter
+ **********************************************************/
 function are_you_sure() {
   let elem = document.querySelector('.newsletter_modal');
   let instance = M.Modal.getInstance(elem);
   instance.open();
 }
-/*
-  function are_you_sure() ends
-*/
+/**********************************************************
+ * are_you_sure() ends
+ **********************************************************/
 
-/*
-  function change_newsletter_choice_to_yes() starts
-*/
+/**********************************************************
+ * change_newsletter_choice_to_yes()
+ *
+ * Description: changes newsletter checkbox from no to yes
+ **********************************************************/
 function change_newsletter_choice_to_yes() {
   document.getElementById('no_newsletter').checked = false;
   document.getElementById('yes_newsletter').checked = true;
 }
-/*
-  function change_newsletter_choice_to_yes() ends
-*/
+/**********************************************************
+ * change_newsletter_choice_to_yes() ends
+ **********************************************************/
 
-/*
-function disable_no() starts
-*/
+/**********************************************************
+ * disable_no()
+ *
+ * Description: disables no checkbox on form
+ **********************************************************/
 function disable_no() {
   window.alert('Oops! Something went wrong');
   change_newsletter_choice_to_yes();
@@ -71,6 +76,6 @@ function disable_no() {
     document.getElementById('new_subscriber').style.display = 'none';
   }, delayInMilliseconds);
 }
-/*
-function disable_no() ends
-*/
+/**********************************************************
+ * disable_no() ends
+ **********************************************************/
