@@ -51,7 +51,8 @@ $(document).ready(function () {
 /**********************************************************
  * shuffle(array)
  *
- * Description:  Fisher–Yates shuffle. I found this online.
+ * Description:  Fisher–Yates shuffle.
+ * I found this here: https://bost.ocks.org/mike/shuffle/
  **********************************************************/
 function shuffle(array) {
   let m = array.length;
