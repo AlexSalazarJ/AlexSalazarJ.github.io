@@ -1,4 +1,4 @@
 Important! Update this document and TOTAL_NUM_OF_GALLERY_PHOTOS variable and
 add number PHOTO_GALLERY_NUMBERS array in main.js when you add a new photo. 
 
-Total Number of photos in homepage photo gallery: 208
+Total Number of photos in homepage photo gallery: 34
